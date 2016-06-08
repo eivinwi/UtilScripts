@@ -2,6 +2,7 @@
 
 import sys
 
+# Do not change these weights.
 weights1 = [3, 7, 6, 1, 8, 9, 4, 5, 2, 1, 0]
 weights2 = [5, 4, 3, 2, 7, 6, 5, 4, 3, 2, 1]
 
