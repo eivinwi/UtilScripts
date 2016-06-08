@@ -31,9 +31,9 @@ def loop_generate_dnr(fnr):
 
     dnr = ''
     while len(dnr) != 11:
-        create_dnr(nums)
+        dnr = create_dnr(nums)
 
-        if len(dnr) == 11 or nums[6:8] == "00":
+        if len(dnr) == 11 or (nums[7] == 0 and nums[8] == 0):
             break
         newnum = str(nums[7]) + str(nums[8])
         print newnum
