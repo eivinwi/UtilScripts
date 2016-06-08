@@ -5,6 +5,7 @@ import sys
 weights1 = [3, 7, 6, 1, 8, 9, 4, 5, 2, 1, 0]
 weights2 = [5, 4, 3, 2, 7, 6, 5, 4, 3, 2, 1]
 
+
 def create_dnr(nums):
     cont_digit_1 = 0
     cont_digit_2 = 0
@@ -51,8 +52,8 @@ def main():
     fnr = sys.argv[1]
     fnr_len = len(fnr)
     if fnr_len < 9:
-        print 'Length of input is', fnr_len, \
-            ",must be at least 9 (Norwegian SSN-numbers are 11 digits, but the two last digits are not used in this case)."
+        print 'Length of input is', fnr_len, ",must be at least 9."
+        print '(Norwegian SSN-numbers are 11 digits, but the two last digits are not used in this case).'
         sys.exit(0)
 
     if fnr_len > 9:
