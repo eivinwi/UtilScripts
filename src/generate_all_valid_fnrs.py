@@ -10,6 +10,11 @@ if len(sys.argv) < 2:
     sys.exit(1)
 
 birth_date = sys.argv[1]
+
+if len(birth_date) != 6:
+    print 'Invalid date (ddmmyy) specified: ' + birth_date
+    sys.exit(0)
+
 random.seed()
 
 ij = sys.argv[2] if (len(sys.argv) > 2) else None
